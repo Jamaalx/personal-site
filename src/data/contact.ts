@@ -13,7 +13,7 @@ export interface ContactItem {
 
 const data: ContactItem[] = [
   {
-    link: 'https://www.linkedin.com/in/alexmantello',
+    link: 'https://www.linkedin.com/in/alex-mantello-2b166414a/',
     label: 'LinkedIn',
     icon: faLinkedinIn,
   },
@@ -23,12 +23,12 @@ const data: ContactItem[] = [
     icon: faGithub,
   },
   {
-    link: 'https://wa.me/40742230442',
+    link: 'https://wa.me/40757314021',
     label: 'WhatsApp',
     icon: faWhatsapp,
   },
   {
-    link: 'https://instagram.com/mantelloalexandru',
+    link: 'https://www.instagram.com/alex.mantello/',
     label: 'Instagram',
     icon: faInstagram,
   },
