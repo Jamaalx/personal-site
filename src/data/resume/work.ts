@@ -17,7 +17,7 @@ const work: Position[] = [
     position: 'CEO & Founder',
     url: 'https://zed-zen.com',
     startDate: '2025-07-01',
-    summary: `Software studio building production SaaS for hospitality, retail, and public-sector clients. Next.js + Supabase + AI-native workflows, end-to-end from product design through deployment.`,
+    summary: `Software studio shipping web apps, mobile apps, AI agents, and integrations for hospitality, retail, and public-sector clients. Next.js · Supabase · Flutter · AI-native workflows, end-to-end from product design through deployment.`,
     highlights: [
       'Shipped 20+ production projects across hospitality, retail, education, and the public sector.',
       'Built Pulse — NFC + QR waiter review SaaS with real-time analytics and AI-generated review responses.',

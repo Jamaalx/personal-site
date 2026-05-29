@@ -6,7 +6,7 @@ import PageWrapper from '@/components/Template/PageWrapper';
 
 export const metadata: Metadata = {
   description:
-    'SaaS builder and founder of ZED-ZEN. Shipping production apps with Next.js, Supabase, and AI-native workflows. 20+ projects in production.',
+    'Product builder and founder of ZED-ZEN. Shipping web apps, mobile apps, AI agents, and integrations with Next.js, Supabase, Flutter, and AI-native workflows.',
 };
 
 export default function HomePage() {

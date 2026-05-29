@@ -1,8 +1,8 @@
 export const aboutMarkdown = `# Hi, I'm Alex.
 
-I build SaaS platforms for businesses that need them. I run [ZED-ZEN](https://zed-zen.com) (FORTITUDO VINCIT SRL), a software studio based in Mureș, Romania, focused on hospitality, retail, and the public sector.
+I build software for businesses that need it — web apps, mobile apps, AI agents, integrations, internal tools, scraping pipelines, dashboards. I run [ZED-ZEN](https://zed-zen.com) (FORTITUDO VINCIT SRL), a software studio based in Mureș, Romania, mostly focused on hospitality, retail, and the public sector — but I take on work outside that too.
 
-Most of my work lives in the same stack: Next.js + Supabase + TypeScript + Stripe + OpenAI. AI-assisted workflows are core to how I move fast — I architect, ship, integrate, deploy, and own the result. End-to-end, from product design through ongoing client support.
+Most of my projects live in the same core stack: Next.js + Supabase + TypeScript + Stripe + OpenAI. For mobile I use Flutter. For scraping and automation I use Python. AI-assisted workflows are core to how I move fast — I architect, ship, integrate, deploy, and own the result. End-to-end, from product design through ongoing client support.
 
 # What I've shipped
 

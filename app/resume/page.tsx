@@ -26,12 +26,13 @@ export default function ResumePage() {
         <header className="resume-header">
           <h1 className="resume-title">Resume</h1>
           <p className="resume-summary">
-            SaaS builder and founder of ZED-ZEN (FORTITUDO VINCIT SRL), a
+            Product builder and founder of ZED-ZEN (FORTITUDO VINCIT SRL), a
             software studio in Mureș, Romania. I&apos;ve shipped 20+ production
             apps for clients across hospitality, retail, education, and the
-            public sector — Next.js + Supabase + AI workflows, end-to-end. AI
-            tools are core to how I move fast; the architecture, integration,
-            and result are mine.
+            public sector — web apps, mobile apps, AI agents, integrations,
+            and internal tools. Next.js · Supabase · Flutter · AI workflows.
+            End-to-end ownership: I architect, ship, integrate, deploy, and
+            own the result.
           </p>
         </header>
 

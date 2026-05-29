@@ -15,20 +15,21 @@ export default function Hero() {
         </h1>
 
         <p className="hero-tagline">
-          SaaS builder and founder of{' '}
+          Product builder and founder of{' '}
           <a href="https://zed-zen.com" className="hero-highlight">
             ZED-ZEN
           </a>
-          . I ship production apps for hospitality, retail, and the public
-          sector — Next.js + Supabase + AI workflows, end-to-end.
+          . I ship software for businesses that need it — web apps, mobile
+          apps, AI agents, integrations, internal tools.
           <br />
-          20+ projects in production with real users.
+          Next.js · Supabase · Flutter · AI workflows. 20+ projects in
+          production.
         </p>
 
         <div className="hero-chips">
-          <span className="hero-chip">Next.js + Supabase</span>
+          <span className="hero-chip">Web + Mobile + AI</span>
           <span className="hero-chip">AI-native workflow</span>
-          <span className="hero-chip">HoReCa SaaS</span>
+          <span className="hero-chip">End-to-end ownership</span>
         </div>
 
         <div className="hero-cta">
