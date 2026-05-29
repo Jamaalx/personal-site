@@ -1,22 +1,21 @@
 import type { Metadata } from 'next';
 
-import Courses from '@/components/Resume/Courses';
 import Education from '@/components/Resume/Education';
 import Experience from '@/components/Resume/Experience';
-import References from '@/components/Resume/References';
 import ResumeNav from '@/components/Resume/ResumeNav';
 import Skills from '@/components/Resume/Skills';
+import Testimonials from '@/components/Resume/Testimonials';
 import PageWrapper from '@/components/Template/PageWrapper';
-import courses from '@/data/resume/courses';
 import degrees from '@/data/resume/degrees';
 import { categories, skills } from '@/data/resume/skills';
 import work from '@/data/resume/work';
+import testimonials from '@/data/testimonials';
 import { createPageMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createPageMetadata({
   title: 'Resume',
   description:
-    "Michael D'Angelo's Resume. OpenAI, Promptfoo, Smile ID, Arthena, Matroid, Stanford ICME, YC alum.",
+    'Resume of Alex Mantello — full-stack developer, founder of ZED-ZEN, building production SaaS with Next.js, Supabase, OpenAI, and Stripe.',
   path: '/resume/',
 });
 
@@ -27,12 +26,12 @@ export default function ResumePage() {
         <header className="resume-header">
           <h1 className="resume-title">Resume</h1>
           <p className="resume-summary">
-            Engineering leader with 15+ years building products across AI,
-            security, and infrastructure. Currently Member of the Technical
-            Staff at OpenAI, where I work on Promptfoo and agent security.
-            Previously co-founded Promptfoo, built it into an AI security
-            platform, and sold it to OpenAI. Stanford MS, YC alum, previously VP
-            Engineering.
+            Full-stack developer and founder of ZED-ZEN (FORTITUDO VINCIT SRL),
+            a software studio in Mureș, Romania. I&apos;ve shipped 20+
+            production SaaS and AI-powered web apps for clients across
+            hospitality, retail, education, and the public sector. End-to-end
+            ownership — from product design and database architecture to AI
+            integration, payments, and deployment.
           </p>
         </header>
 
@@ -51,12 +50,8 @@ export default function ResumePage() {
             <Skills skills={skills} categories={categories} />
           </section>
 
-          <section id="courses" className="resume-section">
-            <Courses data={courses} />
-          </section>
-
-          <section id="references" className="resume-section">
-            <References />
+          <section id="testimonials" className="resume-section">
+            <Testimonials data={testimonials} />
           </section>
         </div>
       </section>

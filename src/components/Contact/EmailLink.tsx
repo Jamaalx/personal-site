@@ -145,7 +145,7 @@ export default function EmailLink({ loopMessage = false }: EmailLinkProps) {
 
   // Use 'hi' as default message when reduced motion or paused with empty message
   const displayMessage =
-    reducedMotion || state.message === '' ? 'hi' : state.message;
+    reducedMotion || state.message === '' ? 'alex' : state.message;
   const isValid = validateText(displayMessage);
 
   const handlePause = () => dispatch({ type: 'PAUSE' });
@@ -170,7 +170,7 @@ export default function EmailLink({ loopMessage = false }: EmailLinkProps) {
   const emailContent = (
     <>
       <span className="contact-email-prefix">{displayMessage}</span>
-      <span className="contact-email-domain">@mldangelo.com</span>
+      <span className="contact-email-domain">@zed-zen.com</span>
     </>
   );
 
@@ -182,7 +182,7 @@ export default function EmailLink({ loopMessage = false }: EmailLinkProps) {
     >
       {isValid ? (
         <a
-          href={`mailto:${displayMessage}@mldangelo.com`}
+          href={`mailto:${displayMessage}@zed-zen.com`}
           className="contact-email-link"
           onClick={handleClick}
           onKeyDown={handleKeyDown}

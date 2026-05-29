@@ -8,7 +8,7 @@ import { createPageMetadata } from '@/lib/metadata';
 export const metadata: Metadata = createPageMetadata({
   title: 'About',
   description:
-    "Learn about Michael D'Angelo - Member of the Technical Staff at OpenAI and builder across AI, security, and infrastructure.",
+    'About Alex Mantello — full-stack developer and founder of ZED-ZEN, building SaaS and AI-powered web apps for hospitality and retail.',
   path: '/about/',
 });
 

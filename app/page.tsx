@@ -6,7 +6,7 @@ import PageWrapper from '@/components/Template/PageWrapper';
 
 export const metadata: Metadata = {
   description:
-    'Member of the Technical Staff at OpenAI, working on Promptfoo and agent security. Previously co-founded Promptfoo, Arthena, and Matroid, and led engineering at Smile ID.',
+    'Full-stack developer and founder of ZED-ZEN. Building production SaaS and AI-powered web apps with Next.js, Supabase, and OpenAI. 20+ shipped projects.',
 };
 
 export default function HomePage() {

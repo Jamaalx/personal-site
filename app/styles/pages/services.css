@@ -1,0 +1,139 @@
+/* Services page */
+
+.services-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--spacing-12) var(--spacing-6) var(--spacing-16);
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: var(--spacing-12);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-6);
+  margin-bottom: var(--spacing-16);
+}
+
+.service-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  transition: transform var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-fast) var(--ease-out);
+}
+
+.service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.service-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.service-card-title {
+  font-family: var(--font-raleway);
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+  color: var(--color-fg);
+  line-height: 1.2;
+}
+
+.service-card-tagline {
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.service-card-desc {
+  font-size: var(--text-sm);
+  color: var(--color-fg-light);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.service-card-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.service-card-bullets li {
+  font-size: var(--text-sm);
+  color: var(--color-fg);
+  padding-left: 1.2em;
+  position: relative;
+  line-height: 1.5;
+}
+
+.service-card-bullets li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: var(--font-weight-bold);
+}
+
+.service-card-examples {
+  font-size: var(--text-xs);
+  color: var(--color-fg-light);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--spacing-3);
+}
+
+.service-card-examples-label {
+  font-weight: var(--font-weight-bold);
+  margin-right: 0.4em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.service-card-example {
+  color: var(--color-fg);
+}
+
+.service-card-pricing {
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent);
+  margin-top: auto;
+  padding-top: var(--spacing-2);
+}
+
+.services-cta {
+  text-align: center;
+  background: var(--color-accent-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-10) var(--spacing-6);
+  margin-top: var(--spacing-12);
+}
+
+.services-cta-title {
+  font-family: var(--font-raleway);
+  font-size: var(--text-2xl);
+  margin: 0 0 var(--spacing-3) 0;
+  color: var(--color-fg);
+}
+
+.services-cta-text {
+  color: var(--color-fg-light);
+  max-width: 600px;
+  margin: 0 auto var(--spacing-6) auto;
+  line-height: 1.6;
+}

@@ -1,96 +1,43 @@
-export const aboutMarkdown = `# Intro
+export const aboutMarkdown = `# Hi, I'm Alex.
 
-I build products, companies, and teams across AI, security, and infrastructure. Today, I am a Member of the Technical Staff at [OpenAI](https://openai.com), where I work on [Promptfoo](https://promptfoo.dev) and agent security.
+I build production SaaS platforms and AI-powered web apps. I run [ZED-ZEN](https://zed-zen.com) (FORTITUDO VINCIT SRL), a software studio based in Mureș, Romania, focused on hospitality and retail tech.
 
-Previously, I co-founded [Promptfoo](https://promptfoo.dev), [Arthena](https://arthena.com) (acquired by Masterworks), and [Matroid](https://matroid.com). I also led engineering at [Smile ID](https://usesmileid.com) and helped build satellites at [Planet](https://planet.com) and [Planetary Resources](https://en.wikipedia.org/wiki/Planetary_Resources).
+Most of my work lives in the same stack: Next.js + Supabase + TypeScript + Stripe + OpenAI. End-to-end ownership — product design, database architecture, AI integration, payments, deployment, and ongoing client support.
 
-In my spare time, I enjoy investing in people and ideas through a [small venture fund](https://skepticalinvestments.biz), focusing on projects with high social impact. If you think I can be helpful to you or your cause, or if you're interested in collaborating, feel free to get in touch.
+# What I've shipped
 
-# Some History
+- **[Pulse](https://pulse.zed-zen.com)** — NFC-based waiter review platform with real-time analytics, used by restaurants in Bucharest.
+- **[App.zed-zen.com](https://app.zed-zen.com)** — multi-platform restaurant operations platform aggregating Bolt, Glovo, and Wolt data with AI tools for content and reviews.
+- **Nexus Dashboard** — a business intelligence layer over the Nexus ERP API (1,370+ endpoints) for sales, cash flow, supplier balances, and food cost.
+- **[Floteris](https://floteris.zed-zen.com)** — fleet management SaaS for Romanian logistics companies with an agentic RAG assistant.
+- **[Soupart Shop](https://shop.zed-zen.com)** — B2B food wholesale e-commerce with live ERP catalog sync, processing 85+ orders.
+- **Ciorbe și Plăcinte mobile app** — restaurant loyalty, nutrition tracking, and gamification (Flutter).
+- **[Salarizare Bugetari](https://salarizare.zed-zen.com)** — free public-interest salary calculator covering 2,627 public-sector job functions in Romania.
 
-- My parents put a computer in my bedroom in 1993 when I was 3. It was an old Tandy that ran MS-DOS. My favorite games were Street Rod 2, Wolfenstein 3D, and Tom and Jerry. It had a mechanical keyboard and a turbo button. To this day, I still don't know what pressing the turbo button really did.
-- We subscribed to AOL in 1995. I still remember installing it from a floppy disk onto our brand-new Packard Bell. It took years for me to send my first email.
-- In the summer of 1996, my uncle purchased [MegaRace](https://en.wikipedia.org/wiki/MegaRace) from [Media Play](https://en.wikipedia.org/wiki/Media_Play) and installed it on my mom's work computer. I might have endangered her business by using her computer too much.
-- At 7, I discovered the mini-games hidden in Microsoft Office. I also beat Minesweeper on expert for the first time.
-- At 8, my parents bought me a Sony Mavica MVC-FD71 digital camera after I stole their SLR one too many times. It could fit 10 images to a floppy disk at a 0.3MP resolution. I still have it, and it still works. I've been taking photographs ever since, now with a Nikon D750, D800, and occasionally with a Mamiya 6II.
-- At 10, I built my first website with Microsoft FrontPage on our Pentium III [Gateway](https://en.wikipedia.org/wiki/Gateway,_Inc.). My website was terrible.
-- I was 11 when I built my first [Tesla Coil](https://en.wikipedia.org/wiki/Tesla_coil) (without my parents' permission). Over the next few years, I built several more, including one of the first audio modulated coils and one of the first DRSSTCs.
-- When I was 12, I set the all-time high record at my local laser tag facility by reverse engineering the charging station and weapon protocols with a photo-resistor, micro-cassette recorder, and a lot of patience. I was unstoppable.
-- At 13, I went to space camp and fell in love. I went back two more times and promised myself that I'd work in space. I've since helped build three generations of satellites and have contributed to two more.
-- At 14, I was almost expelled for finding a backdoor into my high school's file server and telling everyone but the faculty members about it. Later that year, I figured out how to turn off the internet firewall by editing system registry keys. I anonymously shared my work months later.
-- At 16, I participated in a foreign exchange program in Dortmund, Germany. Since then, I've gone back almost every year.
-- 14 - 17, I played a lot of video games. My favorites included Counter-Strike Source, Command and Conquer 3, Halo 2, and Age of Empires II.
-- At 18, in the summer before college, my friends and I started playing [Muggle Quidditch](<https://en.wikipedia.org/wiki/Quidditch_(sport)>). We went on to start over 8 teams in the [International Quidditch Association](https://en.wikipedia.org/wiki/International_Quidditch_Association), including the [Buffalo Quidditch Society](https://www.facebook.com/buffaloquidditch/). At our height, we were ranked third in the IQA. Although I don't play anymore, you can still see pictures of me holding a broom while wearing a chess camp t-shirt on Facebook.
-- At 19, I took my first graduate course and published my first academic paper.
-- At 20, I co-authored a grant to build a satellite and managed a 60+ person team for the next two years. You can read more about [that project](https://ubnl.space/glados/).
+And about 15 more, ranging from internal client tools to scraping pipelines, AI agents, and WhatsApp bots.
 
-Ask me in person for other stories that I'm afraid to share with the internet.
+# How I work
 
-# I Like
+- **Owner mindset.** Hand me a problem, I'll come back with a working solution and a plan for the next step. You don't have to micromanage tech decisions.
+- **Honest scoping.** I'll tell you when something is overkill or when it needs more time than the brief suggests.
+- **Clear communication.** Async-friendly, replies within a few hours during EU work hours.
+- **Production-grade code.** Clean, documented, easy to hand off. Nothing throwaway.
 
-- Running.
-- Skiing.
-- Sailing and the sea.
-- Space.
-- Summer.
-- [Books](https://www.goodreads.com/mdangelo).
-- Colored pencils ([Faber-Castell Polychromos](https://www.faber-castell.com/products/art-and-graphic/polychromos)).
-- Podcasts ([The Daily](https://www.nytimes.com/column/the-daily), [The Ezra Klein Show](https://www.nytimes.com/column/ezra-klein-podcast), [Planet Money](https://www.npr.org/sections/money/), [Dwarkesh Podcast](https://www.dwarkesh.com/about/), [The a16z Show](https://a16z.com/podcasts/a16z-podcast/), [The MAD Podcast with Matt Turck](https://firstmark.com/community/the-mad-podcast/), [Uncapped with Jack Altman](https://podcasts.apple.com/us/podcast/uncapped-with-jack-altman/id1801867202), [Darknet Diaries](https://darknetdiaries.com/), and others).
-- [Good design](/).
-- [Photography](https://instagram.com/dangelosaurus).
+# How I got here
 
-# Travel / Geography
+- Started building websites and tools as a teenager.
+- Studied Public Sector Leadership at FSPAC, Babeș-Bolyai University in Cluj-Napoca; left after one year to build my own thing.
+- Founded FORTITUDO VINCIT SRL in 2022 and have been shipping ever since.
+- Mostly self-taught on the engineering side — learned by building real products that other people actually used.
 
-- I am originally from Buffalo, New York. I have since lived in Palo Alto, Mountain View, San Francisco, Seattle, and New York City.
-- I've been to approximately 50 countries, some of which I have forgotten, many of which I would like to revisit.
-- In 2016, I visited Canada, Ethiopia, Austria, Germany, Belgium, Ireland, Northern Ireland, Italy, Romania, Sweden, Norway, Svalbard, Panama, Costa Rica, Uganda, Japan, and the UAE, mostly in that order.
-- In 2017, I visited Canada, Japan, Denmark, Germany, Sweden, Estonia, Russia, the Netherlands, Belgium, the UK, Spain, Iceland, France, Switzerland, Ethiopia, and Luxembourg.
-- In 2018, I visited Canada, France, Italy, Israel, and the UK.
-- In 2019, I visited Canada, the UK, France, and Switzerland.
-- In 2020, I traveled barely 20 blocks. I stayed in New York and remodeled an apartment.
-- In 2021, I continued remodeling an apartment.
-- In 2022, I switched jobs and visited the UK, France, Greece, Belgium, Luxembourg, Germany, and Kenya.
-- In 2023, I visited France, the UK, Ireland, and Rwanda.
-- I am an Oregon Trail II enthusiast.
+# I like
 
-# Fun Facts
+- Coffee and slow mornings on a terrace.
+- Restaurants — eating in them, building software for them, and arguing about the best ones.
+- Small-team, high-ownership work over big-team, no-ownership work.
+- Open-source projects that respect your time.
 
-- I have a list of thousands of ideas, like creating matching bow ties for cats and humans.
-- I almost always have a sketchbook with me and a [01 Sakura Pigma Micron Pen](https://www.sakuraofamerica.com/product/pigma-micron/).
-- I can't locate every country on a map.
-- I operate a [small angel fund](http://skepticalinvestments.biz/) with terrible returns.
-- I break about 30 traffic laws on a skateboard or [bicycle](https://www.citibikenyc.com/) every single day.
-- I stack-rank coffee shops, restaurants, and every dog I see in New York.
-- I added this page because many people complained that my site was just my resume.
+# Working together
 
-# I Dream Of
-
-- Inspiring and feeling inspired.
-- Enabling a brighter future for everyone, regardless of political or socioeconomic status.
-- Treating every individual with genuine kindness and respect.
-- Staying curious.
-- Continually improving.
-- You not checking the commit history for earlier drafts of this file.
-
-# Websites from People I Admire
-
-- [Alex Peysakhovich](http://alexpeys.github.io/)
-- [Chris Lengerich](http://www.chrislengerich.com/)
-- [Chris Saad](https://www.chrissaad.com/)
-- [Duncan Tomlin](http://duncantomlin.com/)
-- [Ed Kearney](https://edkearney.com/)
-- [Gia Jung](http://giajung.com/)
-- [Hawley Moore](http://hawleymoore.com/)
-- [Holman Gao](https://golmansax.com/)
-- [Ian Webster](http://ianww.com/)
-- [Johanna Flato](https://www.johannaflato.com/)
-- [Judy Mou](http://www.judymou.com/)
-- [Judy Suh](https://www.judysuh.com/)
-- [Kristina Monakhova](https://kristinamonakhova.com/)
-- [Noah Trueblood](http://notrueblood.com/)
-- [Ruoxi Wang](http://ruoxiw.com/)
-- [Tom Sachs](https://www.tomsachs.org/)
-- [Will Holley](https://willholley.com/)
-
-If we are friends and you feel like you belong on this list, you're probably right. Submit a PR, or ask me, and I'll add you.
+If you're a founder, agency, or operations lead with a real problem to solve, I'd love to hear about it. I take on freelance and contract work in addition to running ZED-ZEN — see [my projects](/projects) for what I've shipped, or [get in touch](/contact) to talk.
 `;
