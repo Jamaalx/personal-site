@@ -26,12 +26,12 @@ export default function ResumePage() {
         <header className="resume-header">
           <h1 className="resume-title">Resume</h1>
           <p className="resume-summary">
-            Full-stack developer and founder of ZED-ZEN (FORTITUDO VINCIT SRL),
-            a software studio in Mureș, Romania. I&apos;ve shipped 20+
-            production SaaS and AI-powered web apps for clients across
-            hospitality, retail, education, and the public sector. End-to-end
-            ownership — from product design and database architecture to AI
-            integration, payments, and deployment.
+            SaaS builder and founder of ZED-ZEN (FORTITUDO VINCIT SRL), a
+            software studio in Mureș, Romania. I&apos;ve shipped 20+ production
+            apps for clients across hospitality, retail, education, and the
+            public sector — Next.js + Supabase + AI workflows, end-to-end. AI
+            tools are core to how I move fast; the architecture, integration,
+            and result are mine.
           </p>
         </header>
 

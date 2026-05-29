@@ -1,8 +1,8 @@
 export const aboutMarkdown = `# Hi, I'm Alex.
 
-I build production SaaS platforms and AI-powered web apps. I run [ZED-ZEN](https://zed-zen.com) (FORTITUDO VINCIT SRL), a software studio based in Mureș, Romania, focused on hospitality and retail tech.
+I build SaaS platforms for businesses that need them. I run [ZED-ZEN](https://zed-zen.com) (FORTITUDO VINCIT SRL), a software studio based in Mureș, Romania, focused on hospitality, retail, and the public sector.
 
-Most of my work lives in the same stack: Next.js + Supabase + TypeScript + Stripe + OpenAI. End-to-end ownership — product design, database architecture, AI integration, payments, deployment, and ongoing client support.
+Most of my work lives in the same stack: Next.js + Supabase + TypeScript + Stripe + OpenAI. AI-assisted workflows are core to how I move fast — I architect, ship, integrate, deploy, and own the result. End-to-end, from product design through ongoing client support.
 
 # What I've shipped
 
@@ -18,10 +18,11 @@ And about 15 more, ranging from internal client tools to scraping pipelines, AI 
 
 # How I work
 
+- **AI-native, not AI-only.** I use Claude and Cursor heavily as part of the workflow — they let me move fast without cutting corners on architecture, security, or testing. The output is my responsibility, not the tool's.
 - **Owner mindset.** Hand me a problem, I'll come back with a working solution and a plan for the next step. You don't have to micromanage tech decisions.
 - **Honest scoping.** I'll tell you when something is overkill or when it needs more time than the brief suggests.
 - **Clear communication.** Async-friendly, replies within a few hours during EU work hours.
-- **Production-grade code.** Clean, documented, easy to hand off. Nothing throwaway.
+- **Production-grade output.** Clean, documented, easy to hand off. Nothing throwaway.
 
 # How I got here
 

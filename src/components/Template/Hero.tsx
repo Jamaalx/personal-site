@@ -15,19 +15,19 @@ export default function Hero() {
         </h1>
 
         <p className="hero-tagline">
-          Full-stack developer and founder of{' '}
+          SaaS builder and founder of{' '}
           <a href="https://zed-zen.com" className="hero-highlight">
             ZED-ZEN
           </a>
-          , a software studio building production SaaS and AI-powered web apps
-          for the hospitality and retail industries.
+          . I ship production apps for hospitality, retail, and the public
+          sector — Next.js + Supabase + AI workflows, end-to-end.
           <br />
-          20+ shipped projects across Next.js, Supabase, OpenAI, and Stripe.
+          20+ projects in production with real users.
         </p>
 
         <div className="hero-chips">
           <span className="hero-chip">Next.js + Supabase</span>
-          <span className="hero-chip">AI Apps & Agents</span>
+          <span className="hero-chip">AI-native workflow</span>
           <span className="hero-chip">HoReCa SaaS</span>
         </div>
 
