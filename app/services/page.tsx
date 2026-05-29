@@ -53,9 +53,12 @@ export default function ServicesPage() {
                 </div>
               )}
 
-              {s.pricing && (
-                <div className="service-card-pricing">{s.pricing}</div>
-              )}
+              <Link
+                href="/contact"
+                className="service-card-cta"
+              >
+                Get a quote →
+              </Link>
             </article>
           ))}
         </div>

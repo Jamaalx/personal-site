@@ -21,7 +21,6 @@ const services: Service[] = [
       'Full DevOps: Vercel, Railway, or self-hosted on your own server',
     ],
     examples: ['Pulse', 'App.zed-zen.com', 'Floteris'],
-    pricing: 'Project-based, typically €4,000 – €15,000',
   },
   {
     title: 'AI Apps & Agents',
@@ -35,7 +34,6 @@ const services: Service[] = [
       'Prompt engineering, evaluation, and cost optimization',
     ],
     examples: ['Floteris AI assistant', 'App.zed-zen AI Studio', 'Pulse AI review responses'],
-    pricing: 'From €1,500 for integrations, €5,000+ for custom agents',
   },
   {
     title: 'Business Intelligence Dashboards',
@@ -49,7 +47,6 @@ const services: Service[] = [
       'Multi-location, multi-currency, multi-platform aggregation',
     ],
     examples: ['Nexus Dashboard', 'App.zed-zen BI'],
-    pricing: 'From €3,000 depending on integration complexity',
   },
   {
     title: 'B2B & E-commerce Platforms',
@@ -63,7 +60,6 @@ const services: Service[] = [
       'Custom admin panel for orders, products, and accounts',
     ],
     examples: ['Soupart Shop', 'Terasa Florilor'],
-    pricing: 'From €3,500 for catalog-driven shops',
   },
   {
     title: 'Mobile Apps (Flutter)',
@@ -77,7 +73,6 @@ const services: Service[] = [
       'Brand-aligned UX/UI design included',
     ],
     examples: ['Ciorbe și Plăcinte mobile app'],
-    pricing: 'From €5,000 for branded MVPs',
   },
   {
     title: 'Brand Websites & Restaurant Sites',
@@ -91,7 +86,6 @@ const services: Service[] = [
       'Mobile-responsive, SEO-ready, brand-aligned',
     ],
     examples: ['Terasa Florilor'],
-    pricing: 'From €2,000 for landing-only, €5,000+ with admin panel',
   },
   {
     title: 'Managed Hosting & Self-Hosted Infrastructure',
@@ -106,7 +100,6 @@ const services: Service[] = [
       'Monitoring and incident response included',
     ],
     examples: ['ZED-ZEN infrastructure', 'HoReCa Tech Pipeline'],
-    pricing: 'From €99/month per project, or one-time setup + your own server',
   },
 ];
 

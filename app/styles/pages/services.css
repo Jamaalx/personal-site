@@ -137,3 +137,18 @@
   margin: 0 auto var(--spacing-6) auto;
   line-height: 1.6;
 }
+
+.service-card-cta {
+  display: inline-block;
+  margin-top: auto;
+  padding-top: var(--spacing-2);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.service-card-cta:hover {
+  transform: translateX(4px);
+}
