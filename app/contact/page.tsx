@@ -7,8 +7,9 @@ import PageWrapper from '@/components/Template/PageWrapper';
 import { createPageMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Contact',
-  description: 'Contact Alex Mantello at hi@zed-zen.com',
+  title: 'Contact — Start a Project',
+  description:
+    'Contact Alex Mantello, founder of ZED-ZEN, about a web app, mobile app, AI agent or hosting project: email alex@zed-zen.com, WhatsApp, LinkedIn or GitHub.',
   path: '/contact/',
 });
 

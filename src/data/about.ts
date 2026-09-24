@@ -6,11 +6,11 @@ Most of my projects live in the same core stack: Next.js + Supabase + TypeScript
 
 # What I've shipped
 
-- **[Pulse](https://pulse.zed-zen.com)** — NFC-based waiter review platform with real-time analytics, used by restaurants in Bucharest.
+- **Pulse** (now a [HoReCaOS](https://horecaos.org) module) — NFC-based waiter review platform with real-time analytics, used by restaurants in Bucharest.
 - **[App.zed-zen.com](https://app.zed-zen.com)** — multi-platform restaurant operations platform aggregating Bolt, Glovo, and Wolt data with AI tools for content and reviews.
 - **Nexus Dashboard** — a business intelligence layer over the Nexus ERP API (1,370+ endpoints) for sales, cash flow, supplier balances, and food cost.
 - **[Floteris](https://floteris.zed-zen.com)** — fleet management SaaS for Romanian logistics companies with an agentic RAG assistant.
-- **[Soupart Shop](https://shop.zed-zen.com)** — B2B food wholesale e-commerce with live ERP catalog sync, processing 85+ orders.
+- **[Soupart Shop](https://soupart.horecaos.org/shop)** — B2B food wholesale e-commerce with live ERP catalog sync, processing 85+ orders.
 - **Ciorbe și Plăcinte mobile app** — restaurant loyalty, nutrition tracking, and gamification (Flutter).
 - **[Salarizare Bugetari](https://salarizare.zed-zen.com)** — free public-interest salary calculator covering 2,627 public-sector job functions in Romania.
 

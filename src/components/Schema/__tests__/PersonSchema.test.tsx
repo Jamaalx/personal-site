@@ -4,6 +4,14 @@ import { describe, expect, it } from 'vitest';
 import { AUTHOR_NAME, SITE_URL } from '@/lib/utils';
 import PersonSchema from '../PersonSchema';
 
+// The schema is an @graph (Person + WebSite + ProfilePage); tests look at the Person node.
+function personFrom(script: Element | null) {
+  const root = JSON.parse(script?.innerHTML || '{}');
+  return (root['@graph'] ?? [root]).find(
+    (node: { '@type'?: string }) => node['@type'] === 'Person',
+  );
+}
+
 describe('PersonSchema', () => {
   it('renders a script tag with JSON-LD content', () => {
     const { container } = render(<PersonSchema />);
@@ -20,9 +28,10 @@ describe('PersonSchema', () => {
     const script = container.querySelector(
       'script[type="application/ld+json"]',
     );
-    const data = JSON.parse(script?.innerHTML || '{}');
+    const root = JSON.parse(script?.innerHTML || '{}');
+    const data = personFrom(script);
 
-    expect(data['@context']).toBe('https://schema.org');
+    expect(root['@context']).toBe('https://schema.org');
     expect(data['@type']).toBe('Person');
   });
 
@@ -32,7 +41,7 @@ describe('PersonSchema', () => {
     const script = container.querySelector(
       'script[type="application/ld+json"]',
     );
-    const data = JSON.parse(script?.innerHTML || '{}');
+    const data = personFrom(script);
 
     expect(data.name).toBe(AUTHOR_NAME);
   });
@@ -43,9 +52,9 @@ describe('PersonSchema', () => {
     const script = container.querySelector(
       'script[type="application/ld+json"]',
     );
-    const data = JSON.parse(script?.innerHTML || '{}');
+    const data = personFrom(script);
 
-    expect(data.url).toBe(SITE_URL);
+    expect(data.url).toBe(`${SITE_URL}/`);
     expect(data.image).toBe(`${SITE_URL}/images/me.jpg`);
   });
 
@@ -55,7 +64,7 @@ describe('PersonSchema', () => {
     const script = container.querySelector(
       'script[type="application/ld+json"]',
     );
-    const data = JSON.parse(script?.innerHTML || '{}');
+    const data = personFrom(script);
 
     expect(data.sameAs).toBeDefined();
     expect(Array.isArray(data.sameAs)).toBe(true);
@@ -68,11 +77,11 @@ describe('PersonSchema', () => {
     const script = container.querySelector(
       'script[type="application/ld+json"]',
     );
-    const data = JSON.parse(script?.innerHTML || '{}');
+    const data = personFrom(script);
 
     expect(data.worksFor).toBeDefined();
     expect(data.worksFor['@type']).toBe('Organization');
-    expect(data.worksFor.name).toBe('OpenAI');
+    expect(data.worksFor.name).toBe('ZED-ZEN');
   });
 
   it('uses current role as job title', () => {
@@ -81,9 +90,9 @@ describe('PersonSchema', () => {
     const script = container.querySelector(
       'script[type="application/ld+json"]',
     );
-    const data = JSON.parse(script?.innerHTML || '{}');
+    const data = personFrom(script);
 
-    expect(data.jobTitle).toBe('Member of the Technical Staff');
+    expect(data.jobTitle).toBe('CEO & Founder');
   });
 
   it('includes alumniOf schools', () => {
@@ -92,7 +101,7 @@ describe('PersonSchema', () => {
     const script = container.querySelector(
       'script[type="application/ld+json"]',
     );
-    const data = JSON.parse(script?.innerHTML || '{}');
+    const data = personFrom(script);
 
     expect(data.alumniOf).toBeDefined();
     expect(Array.isArray(data.alumniOf)).toBe(true);

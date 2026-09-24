@@ -19,6 +19,7 @@ export function createPageMetadata({
   return {
     title,
     description,
+    ...(absoluteUrl ? { alternates: { canonical: absoluteUrl } } : {}),
     openGraph: {
       type: 'website',
       locale: 'en_US',

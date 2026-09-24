@@ -13,7 +13,7 @@ import testimonials from '@/data/testimonials';
 import { createPageMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Resume',
+  title: 'Resume — Full-Stack Developer & Founder',
   description:
     'Resume of Alex Mantello — full-stack developer, founder of ZED-ZEN, building production SaaS with Next.js, Supabase, OpenAI, and Stripe.',
   path: '/resume/',

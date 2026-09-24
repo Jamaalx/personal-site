@@ -31,7 +31,7 @@ const siteDescription =
 
 export const metadata: Metadata = {
   title: {
-    default: AUTHOR_NAME,
+    default: `${AUTHOR_NAME} — Full-Stack Developer & Founder of ZED-ZEN`,
     template: `%s | ${AUTHOR_NAME}`,
   },
   description: siteDescription,
@@ -53,6 +53,9 @@ export const metadata: Metadata = {
   authors: [{ name: AUTHOR_NAME }],
   creator: AUTHOR_NAME,
   metadataBase: new URL(SITE_URL),
+  alternates: {
+    types: { 'text/markdown': `${SITE_URL}/llms.txt` },
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',

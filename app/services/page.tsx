@@ -6,7 +6,7 @@ import services from '@/data/services';
 import { createPageMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Services',
+  title: 'Services — Web Apps, AI Agents & Hosting',
   description:
     'Freelance services by Alex Mantello — SaaS MVP development, AI apps & agents, BI dashboards, B2B e-commerce, mobile apps, brand sites, and managed hosting on a Hetzner dedicated server.',
   path: '/services/',

@@ -6,7 +6,7 @@ import data from '@/data/projects';
 import { createPageMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Projects',
+  title: 'Projects — SaaS, Web & Mobile Apps',
   description:
     'Selected SaaS platforms and web apps built by Alex Mantello — Next.js, Supabase, OpenAI, Stripe.',
   path: '/projects/',
