@@ -13,6 +13,12 @@ const nextConfig: NextConfig = {
 
   trailingSlash: true,
 
+  // Next 16.3+ type-checks every file in tsconfig during `next build`;
+  // tests are checked by `npm run type-check`, not by the production build.
+  typescript: {
+    tsconfigPath: 'tsconfig.build.json',
+  },
+
   // Turbopack configuration (used in development)
   turbopack: {
     resolveExtensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
