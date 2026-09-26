@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
+import { BreadcrumbSchema } from '@/components/Schema';
 import PageWrapper from '@/components/Template/PageWrapper';
 import services from '@/data/services';
 import { createPageMetadata } from '@/lib/metadata';
@@ -15,6 +16,7 @@ export const metadata: Metadata = createPageMetadata({
 export default function ServicesPage() {
   return (
     <PageWrapper>
+      <BreadcrumbSchema name="Services" path="/services/" />
       <section className="services-page">
         <header className="services-header">
           <h1 className="page-title">Services</h1>

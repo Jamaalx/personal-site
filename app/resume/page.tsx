@@ -5,6 +5,7 @@ import Experience from '@/components/Resume/Experience';
 import ResumeNav from '@/components/Resume/ResumeNav';
 import Skills from '@/components/Resume/Skills';
 import Testimonials from '@/components/Resume/Testimonials';
+import { BreadcrumbSchema } from '@/components/Schema';
 import PageWrapper from '@/components/Template/PageWrapper';
 import degrees from '@/data/resume/degrees';
 import { categories, skills } from '@/data/resume/skills';
@@ -22,6 +23,7 @@ export const metadata: Metadata = createPageMetadata({
 export default function ResumePage() {
   return (
     <PageWrapper>
+      <BreadcrumbSchema name="Resume" path="/resume/" />
       <section className="resume-page">
         <header className="resume-header">
           <h1 className="resume-title">Resume</h1>

@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import ContactIcons from '@/components/Contact/ContactIcons';
 import EmailLink from '@/components/Contact/EmailLink';
 
+import { BreadcrumbSchema } from '@/components/Schema';
 import PageWrapper from '@/components/Template/PageWrapper';
 import { createPageMetadata } from '@/lib/metadata';
 
@@ -16,6 +17,7 @@ export const metadata: Metadata = createPageMetadata({
 export default function ContactPage() {
   return (
     <PageWrapper>
+      <BreadcrumbSchema name="Contact" path="/contact/" />
       <section className="contact-page">
         <header className="contact-header">
           <h1 className="page-title">Get in Touch</h1>

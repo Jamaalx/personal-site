@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 import Cell from '@/components/Projects/Cell';
+import { BreadcrumbSchema } from '@/components/Schema';
 import PageWrapper from '@/components/Template/PageWrapper';
 import data from '@/data/projects';
 import { createPageMetadata } from '@/lib/metadata';
@@ -18,6 +19,7 @@ export default function ProjectsPage() {
 
   return (
     <PageWrapper>
+      <BreadcrumbSchema name="Projects" path="/projects/" />
       <section className="projects-page">
         <header className="projects-header">
           <h1 className="page-title">Projects</h1>
