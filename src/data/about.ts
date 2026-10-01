@@ -6,13 +6,15 @@ Most of my projects live in the same core stack: Next.js + Supabase + TypeScript
 
 # What I've shipped
 
-- **Pulse** (now a [HoReCaOS](https://horecaos.org) module) — NFC-based waiter review platform with real-time analytics, used by restaurants in Bucharest.
-- **[App.zed-zen.com](https://app.zed-zen.com)** — multi-platform restaurant operations platform aggregating Bolt, Glovo, and Wolt data with AI tools for content and reviews.
+- **[HoReCaOS](https://horecaos.org)** — my main product: an operating system for restaurants, cafés and hotels. POS with fiscal printers, stock and food cost, HR, delivery integrations, e-Factura, and AI agents that do the work from chat. Web, Windows and Android.
+- **[Registrul firmelor](https://registru.horecaos.org)** — free public register of 3.9M Romanian companies and 12.4M balance sheets from ANAF + ONRC, with bulk checks, prospect lists and a free API.
+- **[Meniul Zilei](https://meniulzilei.eu)** — daily lunch menus collected over WhatsApp and auto-published to the web, Facebook and WhatsApp communities.
+- **Pulse** and the **Bolt / Glovo / Wolt aggregator** — NFC waiter reviews and cross-platform delivery BI, now modules inside HoReCaOS.
 - **Nexus Dashboard** — a business intelligence layer over the Nexus ERP API (1,370+ endpoints) for sales, cash flow, supplier balances, and food cost.
-- **[Floteris](https://floteris.zed-zen.com)** — fleet management SaaS for Romanian logistics companies with an agentic RAG assistant.
-- **[Soupart Shop](https://soupart.horecaos.org/shop)** — B2B food wholesale e-commerce with live ERP catalog sync, processing 85+ orders.
+- **[Floteris](https://floteris.zed-zen.com)** — fleet management SaaS for Romanian logistics companies with an agentic RAG assistant and e-Factura.
 - **Ciorbe și Plăcinte mobile app** — restaurant loyalty, nutrition tracking, and gamification (Flutter).
 - **[Salarizare Bugetari](https://salarizare.zed-zen.com)** — free public-interest salary calculator covering 2,627 public-sector job functions in Romania.
+- **[Graziano's Pizza Ape](https://grazianos-pizza-ape.com)** and **[Terasa Florilor](https://terasaflorilor.ro)** — restaurant sites with booking, ordering and custom admin panels.
 
 And about 15 more, ranging from internal client tools to scraping pipelines, AI agents, and WhatsApp bots.
 

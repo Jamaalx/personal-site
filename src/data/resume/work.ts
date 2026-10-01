@@ -20,13 +20,14 @@ const work: Position[] = [
     summary: `Software studio shipping web apps, mobile apps, AI agents, and integrations for hospitality, retail, and public-sector clients. Next.js · Supabase · Flutter · AI-native workflows, end-to-end from product design through deployment.`,
     highlights: [
       'Shipped 20+ production projects across hospitality, retail, education, and the public sector.',
-      'Built Pulse — NFC + QR waiter review SaaS with real-time analytics and AI-generated review responses.',
-      'Designed and built a multi-platform restaurant operations platform aggregating Bolt, Glovo, and Wolt — with cross-platform BI and AI-assisted review responses for 12,000+ reviews.',
+      'Building HoReCaOS (horecaos.org) — an operating system for HoReCa: offline-capable POS with fiscal printers and card terminals, stock and food cost, HR, delivery integrations, e-Factura/SAF-T, 295 granular permissions, AI agents and an MCP connector for Claude and ChatGPT. Web, Windows and Android.',
+      'Folded earlier products into HoReCaOS as modules: Pulse (NFC waiter reviews), the Bolt / Glovo / Wolt delivery aggregator (12,000+ reviews) and the B2B wholesale shop.',
+      'Launched Registrul firmelor — a free public register of 3.9M Romanian companies and 12.4M balance sheets from ANAF + ONRC, with a free API.',
+      'Launched Meniul Zilei — daily lunch menus collected over WhatsApp and auto-published to the web, Facebook and WhatsApp communities.',
       'Built Floteris — fleet management SaaS with an agentic RAG assistant over fleet documents, HR records, and financials.',
       'Built Nexus Dashboard — a BI layer over the Nexus ERP API (1,370+ endpoints) for sales, cash flow, supplier balances, and food cost.',
-      'Built a B2B food-wholesale e-commerce platform with live ERP catalog sync and Stripe payments — currently processing 85+ orders.',
       'Built the public-sector salary calculator covering 2,627 Romanian job functions and complex regulatory logic.',
-      'Stack: Next.js, React, TypeScript, Supabase, PostgreSQL, OpenAI / Claude API, Stripe, Tailwind CSS, Vercel, Railway, Cloudflare, Coolify on Hetzner.',
+      'Stack: Next.js, React, TypeScript, Supabase / PostgreSQL, Tauri, Flutter, .NET, OpenAI / Claude API, MCP, Stripe, Cloudflare, self-hosted on Hetzner with Coolify.',
     ],
   },
   {

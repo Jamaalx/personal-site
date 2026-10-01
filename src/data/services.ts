@@ -11,20 +11,22 @@ export interface Service {
 const services: Service[] = [
   {
     title: 'SaaS MVP Development',
-    tagline: 'Next.js + Supabase + Stripe — from idea to paying users in weeks.',
+    tagline:
+      'Next.js + Supabase + Stripe — from idea to paying users in weeks.',
     description:
-      'I build production-ready SaaS platforms end-to-end: product design, database architecture, auth, payments, and deployment. The same stack I use for my own products — Pulse, App.zed-zen, Floteris — battle-tested under real customer load.',
+      'I build production-ready SaaS platforms end-to-end: product design, database architecture, auth, payments, and deployment. The same stack I use for my own products — HoReCaOS, Floteris, Registrul firmelor — battle-tested under real customer load.',
     bullets: [
       'Auth & multi-tenant Postgres with Row Level Security',
       'Stripe subscriptions with multi-tier pricing & billing portal',
       'Realtime features (live dashboards, notifications)',
       'Full DevOps: Vercel, Railway, or self-hosted on your own server',
     ],
-    examples: ['Pulse', 'App.zed-zen.com', 'Floteris'],
+    examples: ['HoReCaOS', 'Floteris', 'Registrul firmelor'],
   },
   {
     title: 'AI Apps & Agents',
-    tagline: 'OpenAI, Claude, RAG, and agentic workflows that actually solve problems.',
+    tagline:
+      'OpenAI, Claude, RAG, and agentic workflows that actually solve problems.',
     description:
       'I build AI features that go beyond "ChatGPT wrapper" — agentic flows with tool use, RAG over your knowledge base, AI-assisted content generation, and chat assistants embedded inside your app.',
     bullets: [
@@ -33,7 +35,11 @@ const services: Service[] = [
       'AI-generated content (text, images, descriptions, replies)',
       'Prompt engineering, evaluation, and cost optimization',
     ],
-    examples: ['Floteris AI assistant', 'App.zed-zen AI Studio', 'Pulse AI review responses'],
+    examples: [
+      'HoReCaOS AI agents + MCP connector',
+      'Floteris AI assistant',
+      'Meniul Zilei WhatsApp parsing',
+    ],
   },
   {
     title: 'Business Intelligence Dashboards',
@@ -46,7 +52,7 @@ const services: Service[] = [
       'Excel / CSV export across modules',
       'Multi-location, multi-currency, multi-platform aggregation',
     ],
-    examples: ['Nexus Dashboard', 'App.zed-zen BI'],
+    examples: ['Nexus Dashboard', 'HoReCaOS reports'],
   },
   {
     title: 'B2B & E-commerce Platforms',
@@ -59,7 +65,7 @@ const services: Service[] = [
       'Stripe checkout with online + cash-on-delivery flows',
       'Custom admin panel for orders, products, and accounts',
     ],
-    examples: ['Soupart Shop', 'Terasa Florilor'],
+    examples: ['HoReCaOS B2B ordering', 'Terasa Florilor'],
   },
   {
     title: 'Mobile Apps (Flutter)',
@@ -85,18 +91,19 @@ const services: Service[] = [
       'Custom admin panel (orders, products, events, newsletter)',
       'Mobile-responsive, SEO-ready, brand-aligned',
     ],
-    examples: ['Terasa Florilor'],
+    examples: ['Terasa Florilor', "Graziano's Pizza Ape"],
   },
   {
     title: 'Managed Hosting & Self-Hosted Infrastructure',
-    tagline: 'Run your stack on a dedicated server instead of Vercel + Supabase Cloud.',
+    tagline:
+      'Run your stack on a dedicated server instead of Vercel + Supabase Cloud.',
     description:
       'I run a Hetzner EX44 dedicated server (128 GB RAM, NVMe storage, Coolify-managed) and can host your projects on it — self-hosted Supabase, Next.js apps, N8N workflows, scheduled pipelines, game servers. Significantly cheaper than cloud at scale, with no rate limits and no per-request pricing.',
     bullets: [
       'Self-hosted Supabase (Postgres + Auth + Storage + Realtime) on your own infrastructure',
       'Next.js app hosting via Coolify with automatic GitHub deploys',
       'N8N for automation workflows and cron pipelines',
-      'Domain, SSL (Let\'s Encrypt), and backups configured for you',
+      "Domain, SSL (Let's Encrypt), and backups configured for you",
       'Monitoring and incident response included',
     ],
     examples: ['ZED-ZEN infrastructure', 'HoReCa Tech Pipeline'],
