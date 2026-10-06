@@ -1,0 +1,6 @@
+{
+  "_info": "Profilurile publice ale fiecărei entități (Google le folosește ca să lege site-ul de profiluri, pentru Knowledge Panel). Le scrie `accounts.py pull` după fiecare cont creat (doar URL-uri publice verificate); `bin/seo sameas --push` le duce în JSON-LD pe zed-zen.com, alexandru.zed-zen.com și horecaos.org.",
+  "alex": ["https://www.linkedin.com/in/alex-mantello-2b166414a/", "https://github.com/Jamaalx", "https://alexandru.zed-zen.com/"],
+  "zedzen": ["https://github.com/Jamaalx", "https://horecaos.org"],
+  "horecaos": ["https://zed-zen.com/products/horecaos"]
+}

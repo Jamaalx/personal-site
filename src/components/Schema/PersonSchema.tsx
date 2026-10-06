@@ -2,6 +2,7 @@ import contact from '@/data/contact';
 import degrees from '@/data/resume/degrees';
 import work from '@/data/resume/work';
 import { AUTHOR_NAME, SITE_URL } from '@/lib/utils';
+import sameAsExtra from '@/data/sameas.json';
 import JsonLd from './JsonLd';
 
 export default function PersonSchema() {
@@ -29,7 +30,10 @@ export default function PersonSchema() {
         jobTitle: currentJob.position,
         ...(email && { email }),
         // Profile pages only (chat links like wa.me are not identities)
-        sameAs: socialLinks.filter((link) => !link.includes('wa.me')),
+        // + profilurile publice din seo-ops (entities/sameas.json), sincronizate de `seo sameas --push`
+        sameAs: Array.from(
+          new Set([...socialLinks.filter((link) => !link.includes('wa.me')), ...sameAsExtra.alex]),
+        ),
         worksFor: {
           '@type': 'Organization',
           '@id': 'https://zed-zen.com/#organization',
