@@ -84,6 +84,177 @@ Use cases: paste a list of supplier VAT IDs and see who is fiscally inactive or 
     tech: ['Next.js', 'Supabase', 'TypeScript'],
   },
   {
+    slug: 'soupart-site',
+    title: 'Soup Art',
+    subtitle: 'B2B website + CMS for a central kitchen',
+    externalLink: 'https://soupart.zed-zen.com',
+    image: '/images/projects/soupart-site.webp',
+    date: '2026-10-01',
+    desc: 'Website for a central kitchen that cooks soups, main courses and pies for restaurants, canteens and retailers: 33 product sheets with per-portion recipes, solutions per segment, a 94-photo gallery and a 5-step quote wizard. Everything is editable from a custom admin panel, plus a refreshed brand manual.',
+    longDesc: `Soup Art supplies restaurants, canteens, cafés and stores with ready-cooked soups, main courses and pies. The site speaks to the chef or the owner, not to the end customer: no prices, just what the product is, how it ships and how fast it can be on the menu.
+
+What's inside: 59 pages — a product catalogue with filters and search, a page per product with the recipe per portion, packaging and shelf life; six solution pages (HoReCa, retail and white-label, canteens, convenience stores, distributors, corporate events); food-safety and "how we work" pages; a blog; a quote builder that collects products into an offer, and a 5-question wizard that turns a visit into a qualified lead.
+
+Behind it is a custom admin panel behind Cloudflare Access: texts, products, solutions, blog posts, new pages built from blocks, gallery uploads, leads with status and notes, company details and a full version history with one-click restore. Every save rebuilds the static site and rolls back on its own if the build fails. The brand manual was redone alongside it, with the real logo colours and the studio photography.`,
+    tech: ['Node.js', 'Python', 'Supabase', 'Cloudflare Access', 'Docker'],
+    gallery: [
+      {
+        src: '/images/projects/soupart-site/1.webp',
+        caption:
+          'Home — studio photography slideshow, cold-chain and shelf-life facts, client logos right under the hero.',
+      },
+      {
+        src: '/images/projects/soupart-site/2.webp',
+        caption:
+          'Product catalogue — 33 products across soups, main courses, sides and pies, with filters and search.',
+      },
+      {
+        src: '/images/projects/soupart-site/3.webp',
+        caption:
+          'Product page — the plated dish first, then recipe per portion, packaging and shelf life.',
+      },
+      {
+        src: '/images/projects/soupart-site/4.webp',
+        caption:
+          'Gallery — 94 studio photos with category filters and a lightbox.',
+      },
+      {
+        src: '/images/projects/soupart-site/5.webp',
+        caption:
+          'Quote request — products collected into an offer, with what happens after you send it.',
+      },
+      {
+        src: '/images/projects/soupart-site/6.webp',
+        caption: 'Mobile home page.',
+      },
+    ],
+  },
+  {
+    slug: 'bilbor-offroad-fest',
+    title: 'Bilbor Offroad Fest',
+    subtitle: 'Identity, website and registrations for a 4x4 festival',
+    externalLink: 'https://offroadfestbilbor.ro',
+    image: '/images/projects/bilbor.webp',
+    date: '2026-07-20',
+    desc: 'A new off-road festival in a mountain village at 1,050 m: logo, poster, social kit and press kit, a website with crew registrations and its own database, and email campaigns to the people who signed up. The first edition brought 1,000+ people; pre-registration for 2027 is open.',
+    tech: ['Static site', 'Supabase', 'Zoho Mail', 'Branding'],
+    gallery: [
+      {
+        src: '/images/projects/bilbor/1.webp',
+        caption:
+          'Home — drone footage of the first edition and the save-the-date for 2027.',
+      },
+      {
+        src: '/images/projects/bilbor/2.webp',
+        caption:
+          'Program — 4x4 trails, auto expo, camping and the edition II contest.',
+      },
+      {
+        src: '/images/projects/bilbor/3.webp',
+        caption: 'Mobile home page.',
+      },
+      ...[1, 2, 3, 4, 5, 6].map((n) => ({
+        src: `/images/projects/bilbor/brand-${n}.webp`,
+        caption: 'From the brand book.',
+      })),
+    ],
+  },
+  {
+    slug: 'momentis-gold',
+    title: 'Momentis Gold',
+    subtitle: 'Website for a photo booth and 360 platform rental',
+    externalLink: 'https://cabinafotobucuresti.ro',
+    image: '/images/projects/momentis-gold.webp',
+    date: '2026-04-05',
+    desc: 'Presentation site for an events business in Bucharest — photo booth, magic mirror, 360 platform — with packages for weddings, christenings and corporate events and quote requests. Designed in Figma with the DrimRod agency, built 1:1 from the design, hosted and maintained by ZED-ZEN.',
+    tech: ['Next.js', 'Figma', 'Coolify'],
+    gallery: [
+      {
+        src: '/images/projects/momentis-gold/1.webp',
+        caption: 'Home — booth formats and the wedding / christening packages.',
+      },
+      {
+        src: '/images/projects/momentis-gold/2.webp',
+        caption: 'Services page.',
+      },
+      {
+        src: '/images/projects/momentis-gold/3.webp',
+        caption: 'Mobile home page.',
+      },
+      ...[1, 2, 3, 4, 5, 6, 7, 8].map((n) => ({
+        src: `/images/projects/momentis-gold/fig-${n}.webp`,
+        caption: 'From the Figma design, made with DrimRod.',
+      })),
+    ],
+  },
+  {
+    slug: 'visit-ardeal',
+    title: 'Visit Ardeal',
+    subtitle: 'Brand book + website migration for adventure tours',
+    externalLink: 'https://visitardeal.ro',
+    image: '/images/projects/visitardeal.webp',
+    date: '2026-03-01',
+    desc: 'Horse riding, off-road trails and campfires in Transylvania. Brand book (logo, colours, type, photography, tone of voice), then the site moved off an external platform onto ZED-ZEN infrastructure behind Cloudflare: faster builds, no platform fees, ongoing maintenance.',
+    tech: ['React', 'Coolify', 'Cloudflare', 'Branding'],
+    gallery: [
+      {
+        src: '/images/projects/visitardeal/1.webp',
+        caption: 'Home page.',
+      },
+      {
+        src: '/images/projects/visitardeal/2.webp',
+        caption: 'Mobile home page.',
+      },
+      ...[1, 2, 3, 4, 5, 6].map((n) => ({
+        src: `/images/projects/visitardeal/brand-${n}.webp`,
+        caption: 'From the brand book.',
+      })),
+    ],
+  },
+  {
+    slug: 'armonia-academy',
+    title: 'Armonia Academy',
+    subtitle: 'Brand book + website for a music school',
+    externalLink: 'https://armoniaacademy.ro',
+    image: '/images/projects/armonia.webp',
+    date: '2025-10-01',
+    desc: 'A music school in Bucharest with several locations: a 55-page brand book (story, logo, symbol, colours, type, layouts, applications) and a website with a course catalogue by instrument and location and online enrolment. Made together with the DrimRod agency.',
+    tech: ['React', 'Tailwind CSS', 'Branding'],
+    gallery: [
+      {
+        src: '/images/projects/armonia/1.webp',
+        caption: 'Home page.',
+      },
+      {
+        src: '/images/projects/armonia/2.webp',
+        caption: 'Mobile home page.',
+      },
+      ...[1, 2, 3, 4, 5, 6, 7, 8].map((n) => ({
+        src: `/images/projects/armonia/brand-${n}.webp`,
+        caption: 'From the 55-page brand book.',
+      })),
+    ],
+  },
+  {
+    slug: 'lunch-dealzz',
+    title: 'Lunch Dealzz',
+    subtitle: 'Own delivery-only lunch brand',
+    image: '/images/projects/lunch-dealzz.webp',
+    date: '2025-06-01',
+    desc: 'A virtual lunch brand cooked in the kitchens of another brand, to fill their quiet midday hours: soup + main + dessert deals on Bolt Food, Wolt and Tazz from 4 kitchens in Bucharest. Concept, name, brand book, menus priced per channel, product photography and weekly reports — about 1.5 years live, 500–1,000 orders.',
+    tech: ['Bolt Food', 'Wolt', 'Tazz', 'Branding'],
+    gallery: [
+      ...[1, 2, 3, 4, 5, 6].map((n) => ({
+        src: `/images/projects/lunch-dealzz/brand-${n}.webp`,
+        caption: 'From the brand book.',
+      })),
+      ...[1, 2, 3, 4, 5, 6].map((n) => ({
+        src: `/images/projects/lunch-dealzz/camp-${n}.webp`,
+        caption: 'Campaign creative for the delivery platforms.',
+      })),
+    ],
+  },
+  {
     slug: 'pulse',
     title: 'Pulse',
     subtitle: 'NFC waiter reviews — now a HoReCaOS module',
@@ -235,42 +406,7 @@ Includes per-product margin analysis, raw-material price comparison across suppl
       {
         src: '/images/projects/nexus-dashboard/1.png',
         caption:
-          'Sales & Cash Flow — KPIs (sales, expenses, profit, cash flow) with 12-month chart and top-products bar chart.',
-      },
-      {
-        src: '/images/projects/nexus-dashboard/4.png',
-        caption:
-          'Clients & Balances — 26 active clients, total balance and overdue tracking, per-client invoice status.',
-      },
-      {
-        src: '/images/projects/nexus-dashboard/2.png',
-        caption:
-          'Supplier Balances — 179 suppliers, total invoiced vs paid, overdue tracking with CSV/Excel export.',
-      },
-      {
-        src: '/images/projects/nexus-dashboard/3.png',
-        caption:
-          'Financial Report — net sales, food cost, gross margin %, per-product breakdown by sales channel.',
-      },
-      {
-        src: '/images/projects/nexus-dashboard/9.png',
-        caption:
-          'Products — 599 SKUs across 66 categories with per-channel pricing (Auchan, own retail, wholesale).',
-      },
-      {
-        src: '/images/projects/nexus-dashboard/7.png',
-        caption:
-          'Food Cost — raw-material price comparison across 3 supplier tiers, colour-coded best/worst per ingredient.',
-      },
-      {
-        src: '/images/projects/nexus-dashboard/5.png',
-        caption:
-          'Production — 808k RON over 35 days, unique products and average daily value, with raw-material consumption.',
-      },
-      {
-        src: '/images/projects/nexus-dashboard/6.png',
-        caption:
-          'Daily Production — day-by-day production volume and top products for kitchen capacity planning.',
+          'Sales & Cash Flow — KPIs, monthly evolution and top products (client figures blurred).',
       },
       {
         src: '/images/projects/nexus-dashboard/8.png',
