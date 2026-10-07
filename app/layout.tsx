@@ -117,6 +117,7 @@ export default function RootLayout({
           {children}
         </div>
         <GoogleAnalytics />
+        <Script src="/zz.js?v=1" strategy="afterInteractive" />
       </body>
     </html>
   );
