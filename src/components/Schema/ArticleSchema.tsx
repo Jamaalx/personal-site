@@ -1,5 +1,6 @@
+import ENT from '@/data/entities.json';
 import type { Post } from '@/lib/posts';
-import { AUTHOR_NAME, SITE_URL } from '@/lib/utils';
+import { SITE_URL } from '@/lib/utils';
 import JsonLd from './JsonLd';
 
 interface ArticleSchemaProps {
@@ -20,15 +21,10 @@ export default function ArticleSchema({ post }: ArticleSchemaProps) {
     datePublished: post.date,
     dateModified: post.date,
     url: articleUrl,
-    author: {
-      '@type': 'Person',
-      name: AUTHOR_NAME,
-      url: SITE_URL,
-    },
+    // Alex referit prin @id-ul din graful seo-ops (definiția e în PersonSchema)
+    author: ENT.refs.alex,
     publisher: {
-      '@type': 'Person',
-      name: AUTHOR_NAME,
-      url: SITE_URL,
+      ...ENT.refs.alex,
       logo: {
         '@type': 'ImageObject',
         url: authorImage,

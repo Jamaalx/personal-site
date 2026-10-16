@@ -1,0 +1,128 @@
+{
+  "_info": "GENERAT de seo-ops din entities/graph.yaml (versiunea din 2026-10-16); nu edita de mână. Refă cu: seo run entities alexandru gen=1 repo=<repo>. `defines` = nodurile definite DOAR aici; `refs` = ciotul {@type,@id,name,url} cu care orice pagină referă o entitate.",
+  "ids": {
+    "alex": "https://alexandru.zed-zen.com/#person",
+    "alex_site": "https://alexandru.zed-zen.com/#website",
+    "zedzen": "https://zed-zen.com/#organization",
+    "zedzen_site": "https://zed-zen.com/#website",
+    "horecaos": "https://horecaos.org/#organization",
+    "horecaos_site": "https://horecaos.org/#website",
+    "horecaos_app": "https://horecaos.org/#app",
+    "registru_site": "https://registru.horecaos.org/#site",
+    "rt": "https://romaniatransparenta.eu/#organizatie",
+    "rt_site": "https://romaniatransparenta.eu/#site"
+  },
+  "refs": {
+    "alex": {
+      "@type": "Person",
+      "@id": "https://alexandru.zed-zen.com/#person",
+      "name": "Alex Mantello",
+      "url": "https://alexandru.zed-zen.com/"
+    },
+    "alex_site": {
+      "@type": "WebSite",
+      "@id": "https://alexandru.zed-zen.com/#website",
+      "name": "Alex Mantello",
+      "url": "https://alexandru.zed-zen.com/"
+    },
+    "zedzen": {
+      "@type": [
+        "Organization",
+        "ProfessionalService"
+      ],
+      "@id": "https://zed-zen.com/#organization",
+      "name": "ZED-ZEN",
+      "url": "https://zed-zen.com"
+    },
+    "zedzen_site": {
+      "@type": "WebSite",
+      "@id": "https://zed-zen.com/#website",
+      "name": "ZED-ZEN",
+      "url": "https://zed-zen.com"
+    },
+    "horecaos": {
+      "@type": "Organization",
+      "@id": "https://horecaos.org/#organization",
+      "name": "HoReCaOS",
+      "url": "https://horecaos.org/"
+    },
+    "horecaos_site": {
+      "@type": "WebSite",
+      "@id": "https://horecaos.org/#website",
+      "name": "HoReCaOS",
+      "url": "https://horecaos.org/"
+    },
+    "horecaos_app": {
+      "@type": "SoftwareApplication",
+      "@id": "https://horecaos.org/#app",
+      "name": "HoReCaOS",
+      "url": "https://horecaos.org/"
+    },
+    "registru_site": {
+      "@type": "WebSite",
+      "@id": "https://registru.horecaos.org/#site",
+      "name": "Registrul firmelor",
+      "url": "https://registru.horecaos.org/"
+    },
+    "rt": {
+      "@type": "Organization",
+      "@id": "https://romaniatransparenta.eu/#organizatie",
+      "name": "România Transparentă",
+      "url": "https://romaniatransparenta.eu/"
+    },
+    "rt_site": {
+      "@type": "WebSite",
+      "@id": "https://romaniatransparenta.eu/#site",
+      "name": "România Transparentă",
+      "url": "https://romaniatransparenta.eu/"
+    }
+  },
+  "profiles": {
+    "alex": [
+      "https://github.com/Jamaalx",
+      "https://www.instagram.com/alex.mantello/",
+      "https://www.linkedin.com/in/alex-mantello-2b166414a/"
+    ],
+    "zedzen": [],
+    "horecaos": [],
+    "rt": []
+  },
+  "defines": {
+    "en": {
+      "alex": {
+        "@type": "Person",
+        "@id": "https://alexandru.zed-zen.com/#person",
+        "name": "Alex Mantello",
+        "url": "https://alexandru.zed-zen.com/",
+        "image": "https://alexandru.zed-zen.com/images/me.jpg",
+        "sameAs": [
+          "https://github.com/Jamaalx",
+          "https://www.instagram.com/alex.mantello/",
+          "https://www.linkedin.com/in/alex-mantello-2b166414a/"
+        ],
+        "worksFor": {
+          "@type": [
+            "Organization",
+            "ProfessionalService"
+          ],
+          "@id": "https://zed-zen.com/#organization",
+          "name": "ZED-ZEN",
+          "url": "https://zed-zen.com"
+        }
+      },
+      "alex_site": {
+        "@type": "WebSite",
+        "@id": "https://alexandru.zed-zen.com/#website",
+        "name": "Alex Mantello",
+        "url": "https://alexandru.zed-zen.com/",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Person",
+          "@id": "https://alexandru.zed-zen.com/#person",
+          "name": "Alex Mantello",
+          "url": "https://alexandru.zed-zen.com/"
+        }
+      }
+    }
+  }
+}

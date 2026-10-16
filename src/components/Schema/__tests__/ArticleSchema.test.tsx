@@ -72,7 +72,8 @@ describe('ArticleSchema', () => {
 
     expect(data.author['@type']).toBe('Person');
     expect(data.author.name).toBe(AUTHOR_NAME);
-    expect(data.author.url).toBe(SITE_URL);
+    expect(data.author.url).toBe(`${SITE_URL}/`);
+    expect(data.author['@id']).toBe(`${SITE_URL}/#person`);
   });
 
   it('uses correct publisher from constants with logo', () => {
@@ -85,7 +86,8 @@ describe('ArticleSchema', () => {
 
     expect(data.publisher['@type']).toBe('Person');
     expect(data.publisher.name).toBe(AUTHOR_NAME);
-    expect(data.publisher.url).toBe(SITE_URL);
+    expect(data.publisher.url).toBe(`${SITE_URL}/`);
+    expect(data.publisher['@id']).toBe(`${SITE_URL}/#person`);
     expect(data.publisher.logo['@type']).toBe('ImageObject');
     expect(data.publisher.logo.url).toBe(`${SITE_URL}/images/me.jpg`);
   });

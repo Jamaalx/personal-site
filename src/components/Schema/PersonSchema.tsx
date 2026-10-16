@@ -1,16 +1,13 @@
 import contact from '@/data/contact';
+// Graful de entități vine din seo-ops (entities/graph.yaml → src/data/entities.json, generat cu
+// `seo run entities alexandru gen=1 repo=<repo>`). Aici e SINGURA definiție a lui Alex; restul site-urilor îl referă.
+import ENT from '@/data/entities.json';
 import degrees from '@/data/resume/degrees';
 import work from '@/data/resume/work';
-import { AUTHOR_NAME, SITE_URL } from '@/lib/utils';
-import sameAsExtra from '@/data/sameas.json';
+import { AUTHOR_NAME } from '@/lib/utils';
 import JsonLd from './JsonLd';
 
 export default function PersonSchema() {
-  // Extract social links for sameAs (excluding email)
-  const socialLinks = contact
-    .filter((item) => !item.link.startsWith('mailto:'))
-    .map((item) => item.link);
-
   // Extract email from contact data
   const emailItem = contact.find((item) => item.link.startsWith('mailto:'));
   const email = emailItem?.link.replace('mailto:', '');
@@ -22,24 +19,10 @@ export default function PersonSchema() {
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'Person',
-        '@id': `${SITE_URL}/#person`,
-        name: AUTHOR_NAME,
-        url: `${SITE_URL}/`,
-        image: `${SITE_URL}/images/me.jpg`,
+        // name, url, image, sameAs, worksFor din graf; aici doar ce ține de pagina proprie
+        ...ENT.defines.en.alex,
         jobTitle: currentJob.position,
         ...(email && { email }),
-        // Profile pages only (chat links like wa.me are not identities)
-        // + profilurile publice din seo-ops (entities/sameas.json), sincronizate de `seo sameas --push`
-        sameAs: Array.from(
-          new Set([...socialLinks.filter((link) => !link.includes('wa.me')), ...sameAsExtra.alex]),
-        ),
-        worksFor: {
-          '@type': 'Organization',
-          '@id': 'https://zed-zen.com/#organization',
-          name: 'ZED-ZEN',
-          url: currentJob.url,
-        },
         knowsAbout: [
           'Next.js',
           'Supabase',
@@ -54,21 +37,14 @@ export default function PersonSchema() {
           url: degree.link,
         })),
       },
-      {
-        '@type': 'WebSite',
-        '@id': `${SITE_URL}/#website`,
-        url: `${SITE_URL}/`,
-        name: AUTHOR_NAME,
-        inLanguage: 'en',
-        publisher: { '@id': `${SITE_URL}/#person` },
-      },
+      ENT.defines.en.alex_site,
       {
         '@type': 'ProfilePage',
-        '@id': `${SITE_URL}/#profile`,
-        url: `${SITE_URL}/`,
+        '@id': `${ENT.refs.alex.url}#profile`,
+        url: ENT.refs.alex.url,
         name: `${AUTHOR_NAME} — Full-Stack Developer & Founder of ZED-ZEN`,
-        isPartOf: { '@id': `${SITE_URL}/#website` },
-        mainEntity: { '@id': `${SITE_URL}/#person` },
+        isPartOf: { '@id': ENT.ids.alex_site },
+        mainEntity: { '@id': ENT.ids.alex },
       },
     ],
   };

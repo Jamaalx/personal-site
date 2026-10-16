@@ -69,6 +69,19 @@ describe('PersonSchema', () => {
     expect(data.sameAs).toBeDefined();
     expect(Array.isArray(data.sameAs)).toBe(true);
     expect(data.sameAs.length).toBeGreaterThan(0);
+    // sameAs = profiluri, nu site-ul propriu
+    expect(data.sameAs).not.toContain(`${SITE_URL}/`);
+  });
+
+  it('is the single canonical Person @id from the seo-ops graph', () => {
+    const { container } = render(<PersonSchema />);
+
+    const script = container.querySelector(
+      'script[type="application/ld+json"]',
+    );
+    const data = personFrom(script);
+
+    expect(data['@id']).toBe(`${SITE_URL}/#person`);
   });
 
   it('includes worksFor organization', () => {
@@ -80,7 +93,8 @@ describe('PersonSchema', () => {
     const data = personFrom(script);
 
     expect(data.worksFor).toBeDefined();
-    expect(data.worksFor['@type']).toBe('Organization');
+    expect([data.worksFor['@type']].flat()).toContain('Organization');
+    expect(data.worksFor['@id']).toBe('https://zed-zen.com/#organization');
     expect(data.worksFor.name).toBe('ZED-ZEN');
   });
 
