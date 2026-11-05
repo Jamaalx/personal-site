@@ -35,7 +35,7 @@
     "dayjs": "^1.11.23",
     "gray-matter": "^4.0.3",
     "markdown-to-jsx": "^9.10.3",
-    "next": "^16.4.2",
+    "next": "^16.4.5",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "tailwindcss": "^4.3.3"
@@ -66,5 +66,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "overrides": {
+    "undici": "7.30.1"
   }
 }
